@@ -1,0 +1,22 @@
+[package]
+name = "clearlag"
+version = "0.1.0"
+edition = "2024"
+description = "Clears ground entities every N minutes or via /clearlag"
+authors = ["YourName"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pumpkin-plugin-api = {
+  git = "https://github.com/Pumpkin-MC/Pumpkin",
+  package = "pumpkin-plugin-api",
+  # Use ONE of these — matching your server:
+  tag = "0.2.0+26.3-26.51"   # if you run the 0.2.0 release
+  # rev = "742beaf"            # if you run a specific commit / docker sha-742beaf
+  # branch = "master"          # only if server is built from latest master
+}
+
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
