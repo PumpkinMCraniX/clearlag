@@ -39,3 +39,6 @@ cargo build --release
 ```
 
 Pin `pumpkin-plugin-api` in `Cargo.toml` to the **same** Pumpkin tag/commit as your server binary, or you will get API version mismatch errors at load time.
+
+
+Plugin version: 0.1.3. See BUILD-LATEST.md for API compatibility.
