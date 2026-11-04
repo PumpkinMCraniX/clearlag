@@ -35,7 +35,7 @@ clear_message = "§a[ClearLag] Removed {count} ground entities."
 
 ```bash
 rustup target add wasm32-wasip2
-cargo build --release
+cargo build --release  --target wasm32-wasip2
 ```
 
 Pin `pumpkin-plugin-api` in `Cargo.toml` to the **same** Pumpkin tag/commit as your server binary, or you will get API version mismatch errors at load time.
